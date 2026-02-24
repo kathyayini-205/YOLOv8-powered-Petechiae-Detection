@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 model = YOLO(r'D:/Kathyayinireddy/PROJECTS/petechiae_detection/runs/classify/train4/weights/best.pt')
-#model = YOLO('yolov8-cls.pt')
+#modelhi = YOLO('yolov8-cls.pt')
 
 def count_dark_spots(image_path):
     
@@ -63,3 +63,4 @@ def index():
 # ...
 if __name__ == '__main__':
     app.run(debug=True)
+
